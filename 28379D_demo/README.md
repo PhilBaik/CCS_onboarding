@@ -4,10 +4,12 @@ Demo firmware for the TMS320F28379D LaunchPad (LAUNCHXL-F28379D). Every project 
 folder builds with a plain CCS install: no C2000Ware, Motor Control SDK or Digital Power SDK
 is needed, because the TI driver files each project uses are copied into the project itself.
 
-Demos are grouped by the BoosterPack they need, one subfolder per board.
+Demos are grouped by the BoosterPack they need, one subfolder per board. Examples that need
+only the LaunchPad are in `28379D_Launchpad/`; start there if you are new to the board.
 
 | Board folder | Project | What it does |
 |--------------|---------|--------------|
+| [`28379D_Launchpad/`](28379D_Launchpad/README.md) | `led_toggle/`, `gpio/`, `epwm/`, `epwm_interrupt/`, `epwm_modes/` | Small single-topic examples: LEDs, GPIO in/out, ePWM, ePWM interrupt, ePWM counter modes. LaunchPad only, no BoosterPack. |
 | `Boostxl_3phganINV_demo/` | [`simple_3ph_buck/`](Boostxl_3phganINV_demo/simple_3ph_buck/README.md) | 3-phase interleaved GaN buck on BOOSTXL-3PHGANINV with cascaded voltage/current PI. Derived from `electrolyzer_CCS/3ph_interleaved_buck_closed`. |
 
 ---
@@ -41,6 +43,9 @@ Common/
 ├── refs/docs/                          board notes and TI PDFs (see References)
 └── 28379D_demo/
     ├── README.md                       this file
+    ├── 28379D_Launchpad/               LaunchPad-only examples, one CCS project per folder
+    │   └── led_toggle/, gpio/, epwm/, epwm_interrupt/, epwm_modes/   (same layout as below,
+    │                                   minus the .h file and README.md)
     └── Boostxl_3phganINV_demo/         demos for BOOSTXL-3PHGANINV
         └── simple_3ph_buck/
             ├── simple_3ph_buck_main.c  application code: init, ISR, control loops (edit this)
