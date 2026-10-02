@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<?ccsproject version="1.0"?>
+<projectOptions>
+	<ccsVariant value="50:Theia-based"/>
+	<ccsVersion value="71.0.1"/>
+	<deviceFamily value="C2000"/>
+	<executableActions value=""/>
+	<createSlaveProjects value=""/>
+	<templateProperties value="id=simple_3ph_buck.projectspec.simple_3ph_buck"/>
+	<origin value="/private/tmp/claude-501/-Users-baikhyeongmeon-workspace-ccstheia/0de5e851-a1d4-42ff-ad8d-d1a80cbefb39/scratchpad/stage/simple_3ph_buck.projectspec"/>
+	<filesToOpen value=""/>
+</projectOptions>
